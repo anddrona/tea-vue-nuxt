@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/index.scss', '~/assets/styles/mixins/_media.scss'],
 
   app: {
+    baseURL: '/tea-vue-nuxt/',
     head: {
       htmlAttrs: {
         lang: 'ru',
