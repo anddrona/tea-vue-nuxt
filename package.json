@@ -1,0 +1,21 @@
+{
+  "name": "tea-vue-nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.42",
+    "vue-easy-lightbox": "^1.19.0",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.104.1"
+  }
+}

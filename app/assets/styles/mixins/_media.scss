@@ -1,0 +1,19 @@
+@mixin media-breakpoint($size) {
+  @if $size == 'mob' {
+    @media (max-width: 375px) {
+      @content;
+    }
+  } @else if $size == 'sm-tab' {
+    @media (max-width: 550px) {
+      @content;
+    }
+  } @else if $size == 'tab' {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == 'desk' {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+}

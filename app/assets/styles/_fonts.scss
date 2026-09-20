@@ -1,0 +1,9 @@
+@use './mixins/font' as *;
+
+:root {
+  --font-family: 'OpenSans', sans-serif;
+}
+
+@include font-face('OpenSans', '../fonts/OpenSans-Regular', swap, 400, normal);
+@include font-face('OpenSans', '../fonts/OpenSans-SemiBold', swap, 600, normal);
+@include font-face('OpenSans', '../fonts/OpenSans-Bold', swap, 700, normal);
