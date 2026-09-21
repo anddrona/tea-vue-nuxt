@@ -78,9 +78,11 @@ const lightboxImages = computed(() => props.images.map((img) => `${img}.jpg`))
     position: relative;
     margin-bottom: 10px;
 
-    &:hover {
-      .product-gallery__zoom {
-        transform: scale(1.8);
+    @media (hover: hover) {
+      &:hover {
+        .product-gallery__zoom {
+          transform: scale(1.8);
+        }
       }
     }
   }

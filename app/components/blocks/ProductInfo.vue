@@ -91,8 +91,10 @@ onMounted(() => {
     gap: 1px;
     color: var(--deep-grey);
 
-    &:hover {
-      color: var(--blue);
+     @media (hover: hover) {
+        &:hover {
+          color: var(--blue);
+      }
     }
   }
 
@@ -119,15 +121,17 @@ onMounted(() => {
     background-color: var(--light-green);
     border-radius: 4px;
 
-    &:hover {
-      background-color: var(--black);
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--black);
 
-      svg {
-        stroke: var(--yellow);
-      }
+        svg {
+          stroke: var(--yellow);
+        }
 
-      span {
-        color: var(--yellow);
+        span {
+          color: var(--yellow);
+        }
       }
     }
   }
@@ -137,8 +141,10 @@ onMounted(() => {
     width: 100%;
     color: var(--deep-grey);
 
-    &:hover {
-      color: var(--dark-red);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--dark-red);
+      }
     }
 
     &.is-active {
