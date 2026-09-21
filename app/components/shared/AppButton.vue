@@ -61,6 +61,13 @@ withDefaults(
         background-color: var(--deep-grey);
       }
     }
+
+    &:active {
+       --icon-color: var(--deep-grey);
+        color: var(--yellow);
+        transition: all 0.3s;
+        background-color: var(--deep-grey);
+    }
   }
 
   &__show-more {
@@ -76,6 +83,12 @@ withDefaults(
         background-color: var(--deep-grey);
         color: var(--light-yellow);
       }
+    }
+
+    &:active {
+      transition: all 0.3s;
+      background-color: var(--deep-grey);
+      color: var(--light-yellow);
     }
 
     @include media-breakpoint(mob) {
