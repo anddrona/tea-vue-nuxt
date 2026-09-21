@@ -61,9 +61,11 @@ const selectedSku = defineModel<string>({ required: true })
     border: solid 1px var(--light-border);
     transition: all 0.3s;
 
-    &:hover {
-      cursor: pointer;
-      border-color: var(--deep-grey);
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        border-color: var(--deep-grey);
+      }
     }
   }
 

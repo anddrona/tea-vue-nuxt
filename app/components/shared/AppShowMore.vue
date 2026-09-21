@@ -72,7 +72,6 @@ onMounted(() => {
     left: 0;
     height: 120px;
     background: linear-gradient(transparent, var(--light-yellow));
-
     pointer-events: none;
     transition: opacity 0.3s ease;
   }

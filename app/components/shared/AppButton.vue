@@ -25,15 +25,21 @@ withDefaults(
 @use '~/assets/styles/mixins/media' as *;
 
 .app-button {
-  cursor: pointer;
-  background: none;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+  background: none;
   outline: none;
   transition: all 0.3s;
+  appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
 
-  &:hover {
-    transition: all 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      transition: all 0.3s;
+    }
   }
 
   &__auth {
@@ -47,11 +53,13 @@ withDefaults(
     text-transform: uppercase;
     transition: all 0.3s;
 
-    &:hover {
-      --icon-color: var(--deep-grey);
-      color: var(--yellow);
-      transition: all 0.3s;
-      background-color: var(--deep-grey);
+    @media (hover: hover) {
+      &:hover {
+        --icon-color: var(--deep-grey);
+        color: var(--yellow);
+        transition: all 0.3s;
+        background-color: var(--deep-grey);
+      }
     }
   }
 
@@ -62,10 +70,12 @@ withDefaults(
     background: var(--light-yellow);
     color: var(--deep-grey);
 
-    &:hover {
-      transition: all 0.3s;
-      background-color: var(--deep-grey);
-      color: var(--light-yellow);
+    @media (hover: hover) {
+      &:hover {
+        transition: all 0.3s;
+        background-color: var(--deep-grey);
+        color: var(--light-yellow);
+      }
     }
 
     @include media-breakpoint(mob) {

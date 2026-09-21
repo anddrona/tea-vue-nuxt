@@ -99,9 +99,11 @@ const activeTabData = computed(() => props.tabs.find((tab) => tab.name === activ
       color: var(--black);
       transition: all 0.3s;
 
-      &:hover {
-        color: var(--deep-grey);
-        transition: all 0.3s;
+      @media (hover: hover) {
+        &:hover {
+          color: var(--deep-grey);
+          transition: all 0.3s;
+        }
       }
     }
   }
