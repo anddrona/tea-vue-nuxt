@@ -96,6 +96,10 @@ onMounted(() => {
           color: var(--blue);
       }
     }
+
+    &:active {
+      color: var(--blue);
+    }
   }
 
   &__header {
@@ -133,6 +137,18 @@ onMounted(() => {
           color: var(--yellow);
         }
       }
+    }
+
+    &:active {
+      background-color: var(--black);
+
+        svg {
+          stroke: var(--yellow);
+        }
+
+        span {
+          color: var(--yellow);
+        }
     }
   }
 
